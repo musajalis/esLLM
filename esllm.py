@@ -1,3 +1,5 @@
+### Expanding Scope LLM ###
+
 import statistics
 import numpy as np
 
@@ -64,7 +66,7 @@ def expVal(arr):
   else:
     return statistics.mode(arr)
 
-def expandingScope(input, wordScope, probMatrix):
+def esllm(input, wordScope, probMatrix):
   wordSet = prevSet(input, wordScope)
   wordSet = asciiSet(wordSet)
   outputPredSet = []
